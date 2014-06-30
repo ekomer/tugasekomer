@@ -67,9 +67,9 @@
 		                                    <td width="100">
 		                                        <a  href="#delete_jurusan<?php echo $id; ?>" data-toggle="modal"  class="btn btn-danger"><i class="icon-trash icon-large"></i></a>
 												<?php include('delete_jurusan_modal.php'); ?>
-		                                        <a rel="tooltip"  title="Edit" id="e<?php echo $id_; ?>" href="#edit<?php echo $id_; ?>" data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
-		                                        
-		                                    	<?php include('modal_edit_jurusan.php'); ?>
+		                                        <a rel="tooltip"  title="Edit" id="e<?php echo $id; ?>" href="#edit<?php echo $id; ?>" data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
+		                                        <?php include('modal_edit_jurusan.php'); ?>
+		                                    	
 											</td>
 											</tr>
 		                                    <?
@@ -87,6 +87,6 @@
 			</div>
 		</div>
     </div>
-<?php include('footer.php') ?>
+<?php include('footer.php'); ?>
 </body>
 </html>

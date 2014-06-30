@@ -22,7 +22,7 @@ $user_type  = $user_row['user_type'];
 					<?php } ?>
 					<li><a href="course.php"><i class="icon-file icon-large"></i>&nbsp;Perguruan Tinggi</a></li>
 					<li  class="active"><a href="subject.php"><i class="icon-list-alt icon-large"></i>&nbsp;Fakultas</a></li>
-					<li><a href="students.php"><i class="icon-group icon-large"></i>&nbsp;Students</a></li>
+					<li><a href="students.php"><i class="icon-group icon-large"></i>&nbsp;Jurusan</a></li>
 					<!-- <li><a href="section.php"><i class="icon-group icon-large"></i>&nbsp;Sections</a></li> -->
 				
 					<li><a href="logout.php"><i class="icon-signout icon-large"></i>&nbsp;Logout</a></li>

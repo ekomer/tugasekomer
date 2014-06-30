@@ -1,4 +1,9 @@
-<div id="add_subject" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<html>
+	<head>
+			<script src="script.js" type="text/javascript"></script>
+	</head>
+	<body>
+	<div id="add_subject" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-body">
 			<div class="alert alert-info">Tambah Jurusan</div>
 	<form class="form-horizontal" method="post">
@@ -6,8 +11,8 @@
 			<div class="control-group">
 						<label class="control-label" for="type">Nama Perguruan Tinggi</label>
 							<div class="controls">
-							<select name="pt" required id="pt">
-							
+							<select name="pt" id="pt" onChange="getfakultas()">
+							<option value="">Pilih Perguruan Tinggi</option>
 							<? $query=mysql_query("SELECT * FROM perguruan_tinggi");
 								while($row=mysql_fetch_array($query))
 								{	
@@ -18,27 +23,16 @@
 							</select>
 							</div>
 			</div>
-			<!--<script type='text/javascript'>
-	   			var e = document.getElementById("pt");
-				var strUser = e.options[e.selectedIndex].value;
-			
-			</script>-->
-			
-							
+
 			<div class="control-group">
 						<label class="control-label" for="type">Nama Fakultas</label>
 							<div class="controls">
-							<select name="fakultas" required>
-							<?
-								
-								$query=mysql_query("SELECT * FROM fakultas");
-								while($row=mysql_fetch_array($query))
-								{	
-							 ?>
-							<option value="<?php echo $row['kode_fakultas'];?>"><?php echo $row['nama_fakultas']; ?></option>
+							<select name="fakultas" id="fakultas" required>
 							
-							<?}?>
+							<option value="">Pilih fakultas</option>
 							</select>
+							
+							
 							</div>
 			</div>
 			<div class="control-group">
@@ -80,3 +74,5 @@ $error_course=mysql_query("select * from jurusan where kode_fakultas='$kode_faku
 	<?php
 	} }
 	?>
+</body>
+</html>

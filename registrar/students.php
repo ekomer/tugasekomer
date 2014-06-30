@@ -1,6 +1,11 @@
 <?php include('header.php'); ?>
 <?php include('session.php'); ?>
 <?php include('navbar_jurusan.php'); ?>
+<html>
+	<head>
+			<script src="script.js" type="text/javascript"></script>
+	</head>
+	<body>
     <div class="container">
 		<div class="margin-top">
 			<div class="row">	
@@ -83,3 +88,5 @@
 		</div>
     </div>
 <?php include('footer.php') ?>
+</body>
+</html>

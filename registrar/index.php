@@ -40,7 +40,8 @@
 								$num_row = mysql_num_rows($result);
 									$row=mysql_fetch_array($result);
 									if( $num_row > 0 ) {
-										header('location:dasboard.php');
+										//header('location:dasboard.php');
+										header('location:progressbar.php');
 								$_SESSION['id']=$row['user_id'];
 									}
 									else{ ?>

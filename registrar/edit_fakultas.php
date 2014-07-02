@@ -1,6 +1,5 @@
 <?php
-echo "BERHASIL";
-/*
+
 include('dbcon.php');
 	if (isset($_POST['edit'])){
 	$id=$_POST['id'];
@@ -13,5 +12,4 @@ include('dbcon.php');
 	</script>
 	<?php
 	}
-	*/
 ?>
